@@ -1,0 +1,48 @@
+
+create table Recipe (
+RecipeID int,
+RecipeName varchar(55),
+RecipeCategory varchar(55),
+RecipeDescrip (text),
+);
+
+create table Ingrediens (
+IngredID int,
+IngredName varchar(55),
+IngredWeight double (5,2),
+IngredCateogry varchar (55)
+);
+
+create table RecipeIngrediens (
+IngredID int,
+RecipeID int,
+IngredName varchar(55)
+);
+
+create table Categories (
+CategoryID int,
+CategoryName varchar(55)
+);
+
+create table IngCategory (
+CategoryID int,
+IngredID int,
+CategoryName varchar(55)
+);
+
+
+
+
+
+-- drop table Profiles;
+
+create table Profiles (
+ProfileID int,
+FirstName varchar(55),
+LastName varchar(55),
+EmailAddress varchar(55),
+PhoneNumber varchar(55),
+Gender varchar(6),
+BirthDate date,
+Role varchar(55)  
+);
