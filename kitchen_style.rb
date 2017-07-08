@@ -5,6 +5,7 @@ class Kitchen_style
 	def initialize(name, recipe_id)
 		@name = name
 		@recipe_id = recipe_id
+		@origin = origin #(country)
 	end
 
 	def save
