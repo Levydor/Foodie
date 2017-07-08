@@ -1,48 +1,59 @@
 
-create table Recipe (
-RecipeID int,
-RecipeName varchar(55),
-RecipeCategory varchar(55),
-RecipeDescrip (text),
+create table recipe (
+name varchar(55),
+recipe_id int,
+tools varchar(55),
+ingredents varchar(55),
+mood varchar(55),
+kitchen_style varchar(55),
+diners_amount int,
+cooking_time time,
+level int,
+prefrences varchar(55),
+description text       --does all varchar attributes needs to be text?
 );
 
-create table Ingrediens (
-IngredID int,
-IngredName varchar(55),
-IngredWeight double (5,2),
-IngredCateogry varchar (55)
+--
+create table ingredient (
+name varchar(55),
+id int,
+weight double (5,2),
+category varchar (55)
 );
 
-create table RecipeIngrediens (
-IngredID int,
-RecipeID int,
-IngredName varchar(55)
+create table recipe_category (
+category_id int,
+ingredent_id int,
+category_name varchar(55)
 );
 
-create table Categories (
-CategoryID int,
-CategoryName varchar(55)
+create table recipe_ingredients (
+ingredent_id int,
+recipe_id int
+
 );
 
-create table IngCategory (
-CategoryID int,
-IngredID int,
-CategoryName varchar(55)
+create table category (
+id int,
+name varchar(55)
+);
+
+create table ingredient_category (
+category_id int,
+ingredient_id int,
+category_name varchar(55)
 );
 
 
-
-
-
--- drop table Profiles;
-
-create table Profiles (
-ProfileID int,
-FirstName varchar(55),
-LastName varchar(55),
-EmailAddress varchar(55),
-PhoneNumber varchar(55),
-Gender varchar(6),
-BirthDate date,
-Role varchar(55)  
+create table profile (
+profile_id int,
+first_name varchar(55),
+last_name varchar(55),
+email varchar(55),
+phone varchar(55),
+gender varchar(6),
+birth_date date,
+role varchar(55)  
 );
+
+
