@@ -3,7 +3,7 @@ create table recipe (
 name varchar(55),
 recipe_id int,
 tools varchar(55),
-ingredents varchar(55),
+ingredients varchar(55),
 mood varchar(55),
 kitchen_style varchar(55),
 diners_amount int,
@@ -13,7 +13,7 @@ prefrences varchar(55),
 description text       --does all varchar attributes needs to be text?
 );
 
---
+
 create table ingredient (
 name varchar(55),
 id int,
@@ -21,11 +21,13 @@ weight double (5,2),
 category varchar (55)
 );
 
-create table recipe_category (
+
+create table ingredient_category (
 category_id int,
 ingredent_id int,
 category_name varchar(55)
 );
+
 
 create table recipe_ingredients (
 ingredent_id int,
@@ -33,10 +35,6 @@ recipe_id int
 
 );
 
-create table category (
-id int,
-name varchar(55)
-);
 
 create table ingredient_category (
 category_id int,
@@ -56,4 +54,13 @@ birth_date date,
 role varchar(55)  
 );
 
+create table mood (
+name varchar(55),
+recipe_id int
+)
 
+create table Kitchen_style(
+name varchar (55),
+recipe_id int,
+origin varchar(55) --(country)
+)
