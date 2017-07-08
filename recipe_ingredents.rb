@@ -1,8 +1,8 @@
-class Recipe_ingredents
-	attr_reader :ingredents, :recipe_id # what defines a kitchen style?
+class Recipe_ingredients
+	attr_reader :ingredients, :recipe_id # what defines a kitchen style?
 
-	def initialize(ingredents, recipe_id)
-		@ingredents = ingredents
+	def initialize(ingredients, recipe_id)
+		@ingredients = ingredients
 		@recipe_id = recipe_id
 	end
 	
