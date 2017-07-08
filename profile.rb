@@ -1,5 +1,5 @@
 # Defines a single user profile
-class profile
+class Profile
 	attr_reader :profile_id,:first_name, :last_name, :email, :phone, :gender,:birth_date, :role 
 
 	def initialize(profile_id, first_name, last_name, email, phone, gender, birth_date, role)
