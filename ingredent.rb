@@ -1,6 +1,6 @@
-# Defines a single ingredent
-class Ingredent
-	attr_reader :name, :id, :weight, :category # what defines an ingredent?
+# Defines a single ingredient
+class Ingredient
+	attr_reader :name, :id, :weight, :category # what defines an ingredient?
 
 	def initialize(name, id, weight, category)
 		@name = name
@@ -10,6 +10,6 @@ class Ingredent
 	end
 
 	def save
-		# Saves an ingredent to the DB
+		# Saves an ingredient to the DB
 	end
 end
