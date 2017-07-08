@@ -1,4 +1,4 @@
-# Defines a single ingredient
+# Defines a single Ingredient
 class Ingredient
 	attr_reader :name, :id, :weight, :category # what defines an ingredient?
 
