@@ -1,12 +1,11 @@
 # Defines a single Ingredient
 class Ingredient
-	attr_reader :name, :id, :weight, :category # what defines an ingredient?
+	attr_reader :name, :id, :weight # what defines an ingredient?
 
-	def initialize(name, id, weight, category)
+	def initialize(name, id, weight)
 		@name = name
 		@id = id
 		@weight = weight
-		@category = category
 	end
 
 	def save

@@ -1,4 +1,4 @@
-class Recipe_tools
+class RecipeTools
 	attr_reader :tools, :recipe_id # what defines a kitchen style?
 
 	def initialize(tools, recipe_id)
