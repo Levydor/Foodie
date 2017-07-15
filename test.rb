@@ -7,7 +7,7 @@ require "./recipe_ingredients.rb"
 require "./recipe_tools"
 require "./kitchen_style.rb"
 require "./profile.rb"
-
+#require "./ingredient_category.rb" ?
 =begin
 
 ======================== TESTER FOR FOODIE ========================
