@@ -35,7 +35,7 @@ fish_ingredients = Recipe_ingredients.new([tomato, black_pepper, green_pepper], 
 
 # I invented this - maybe not necessary:
 home_mood = Mood.new("home", recipe_id)
-maroccan_style = Kitchen_style.new("maroccan", recipe_id)
+maroccan_style = Kitchen_style.new("maroccan", recipe_id, "Morocco")
 
 
 fish = Recipe.new("maroccan fish", fish_tools, fish_ingredients, home_mood, maroccan_style, 4, 120, "hard", ["kosher"], "bla bla bla").print_recipe
