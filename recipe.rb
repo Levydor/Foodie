@@ -15,6 +15,37 @@ class Recipe
 		@description = description
 	end
 
+	#def set_recipe =(name,recipe_id,tools,ingredients,mood,kitchen_style,diners_amount,cooking_time,level,prefrences,description)
+	#	@name = name
+	##	@recipe_id = recipe_id
+	#	@tools = tools
+	#	@ingredients = ingredients
+	#	@mood = mood
+	#	@kitchen_style = kitchen_style
+	##	@diners_amount = diners_amount
+	#	@cooking_time = cooking_time
+	#	@level = level
+	#	@prefrences = prefrences
+	#	@description = description
+	#end
+
+	#def get_recipe
+	#	@name
+	#	@recipe_id
+	#	@tools
+	#	@ingredients
+	#	@mood 
+	#	@kitchen_style
+	#	@diners_amount
+	#	@cooking_time
+	#	@level
+	#	@prefrences
+	#	@description
+	#end
+	
+	#P =profile.New()  
+
+
 	# Finds a recipe/recipes based on attributes 
 	def self.find(attributes)
 		# TBD
