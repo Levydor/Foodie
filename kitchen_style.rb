@@ -1,8 +1,8 @@
 # Defines a single kitchen style
-class KitchenStyle
-	attr_reader :name, :recipe_id, :origin # what defines a kitchen style?
+class Kitchen_style
+	attr_reader :name, :recipe_id # what defines a kitchen style?
 
-	def initialize(name, recipe_id, origin)
+	def initialize(name, recipe_id)
 		@name = name
 		@recipe_id = recipe_id
 		@origin = origin #(country)
